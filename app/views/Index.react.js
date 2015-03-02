@@ -3,6 +3,8 @@ var React = require('react')
 require('react.backbone') // self binding
 
 module.exports = React.createBackboneClass({
+  displayName: 'Index',
+
   render: function () {
     return (
       <div>

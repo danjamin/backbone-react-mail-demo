@@ -1,4 +1,6 @@
 ul.mailboxes {
+  margin: 0;
+  padding: 0 5px;
   list-style-type: none;
 }
 

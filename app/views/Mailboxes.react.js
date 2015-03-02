@@ -4,9 +4,11 @@ var React = require('react')
 
 require('react.backbone') // self binding
 
-var Mailbox = require('./mailbox.react')
+var Mailbox = require('./Mailbox.react')
 
 module.exports = React.createBackboneClass({
+  displayName: 'Mailboxes',
+
   render: function () {
     var items = this.getCollection().map(function (mailbox) {
       return (

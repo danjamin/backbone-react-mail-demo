@@ -1,7 +1,7 @@
 var Backbone = require('backbone')
 var React = require('react')
-var MailboxesView = require('./views/mailboxes.react')
-var IndexView = require('./views/index.react')
+var MailboxesView = require('./views/Mailboxes.react')
+var IndexView = require('./views/Index.react')
 var Mailboxes = require('./collections/Mailboxes')
 
 module.exports = Backbone.Router.extend({
