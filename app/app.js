@@ -1,7 +1,8 @@
 require("./app.css")
 
-var Backbone = require('backbone')
-var Router = require('./router')
+// make sure router is initialized
+require('./router')
 
-new Router()
+var Backbone = require('backbone')
+
 Backbone.history.start({pushState: false, root: "/"})
