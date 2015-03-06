@@ -1,4 +1,4 @@
-require('./badge.css')
+require('../styles/badge.css')
 
 var React = require('react')
 

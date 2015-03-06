@@ -1,8 +1,17 @@
-require("./app.css")
+require("./styles/app.css")
 
-// make sure router is initialized
-require('./router')
+var React = require('react')
+var router = require('./router')
+var AppLayout = require('./views/layouts/App.react')
+var Mailboxes = require('./collections/Mailboxes')
 
-var Backbone = require('backbone')
+router.start()
 
-Backbone.history.start({pushState: false, root: "/"})
+var mailboxes = new Mailboxes()
+mailboxes.fetch()
+
+React.render(
+  <AppLayout mailboxes={mailboxes}>
+  </AppLayout>,
+  document.getElementById('main')
+)

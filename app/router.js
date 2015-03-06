@@ -2,10 +2,23 @@ var Backbone = require('backbone')
 
 var router = new Backbone.Router()
 
-router.route('', 'index')
-  .route('box/:id', 'mailbox')
+var start
 
-router.on('route:index', require('./routes/Index'))
-router.on('route:mailbox', require('./routes/Mailbox'))
+start = function () {
+  // router
+  //   .route('', 'index')
+  //   .route('box/:id', 'mailbox')
+  //
+  // router
+  //   .on('route:index', require('./routes/Index.react'))
+  //   .on('route:mailbox', require('./routes/Mailbox.react'))
 
-module.exports = router
+  Backbone.history.start({
+    pushState: false, root: "/"
+  })
+}
+
+module.exports = {
+  router: router,
+  start: start
+}

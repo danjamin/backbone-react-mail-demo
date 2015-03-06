@@ -1,4 +1,4 @@
-require('./pull.css')
+require('../styles/pull.css')
 
 var React = require('react')
 

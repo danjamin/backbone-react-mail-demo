@@ -1,0 +1,8 @@
+table.messages {
+  text-align: left;
+}
+
+table.messages td,
+table.messages th {
+  padding: 0 10px 0 0;
+}
